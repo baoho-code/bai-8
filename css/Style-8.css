@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/* CSS Document */
+h1{ font-family: "Helvetica Neue"; font-weight: 700; font-size: 32px}
+body{
+	width: 100%; min-height: 500px; 
+	font-family: Gotham, "Helvetica Neue", Helvetica, "sans-serif";
+	font-size:14px; box-sizing: border-box; margin:0; padding:0
+}
+header{
+	 width: 100%; height: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Or any desired background */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  /* Add other styling like padding, height, etc. */
+}
+.logo{ padding-top: 10px }
+.logo img{width: 150px; height: auto}
+.menu{ padding-top: 15px }
+.menu ul{ display:flex;  margin:0; padding:0; }
+.menu ul li {margin-right:30px; list-style: none; }
+.menu a { 
+  text-decoration: none; 
+font-size:16px;
+  color: #7C7C7C; 
+  display: block;}
+.menu a:hover{
+	text-decoration: underline 3px darkred ;
+	color: #414141
+}
+.menu a.gachduoi{
+	border-bottom: 2px solid darkred;
+	color: #414141
+}
+
+.icon-3{ padding-top: 15px; }
+.lg-size{width: auto ;height: 17px; padding-left: 10px}
+.banner{
+	width: 100%; min-height: 500px; background-color:#EBA6A7;
+}
+
+.pt-30{padding-top:30px}
+.gach-chan{border-bottom: 3px solid darkred}
+
+.vien{
+	width:100%; min-height: 70px; border: 1px solid darkred; padding: 10px; position: relative; overflow:hidden;
+}
+.vien:hover .icon{position:absolute; top:40%; left:10%}
+.vien-bg{
+ width: 100%; height:100%; background-color:rgba(210,210,210,0.5);
+position: absolute; z-index: 5; display: none;  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px); }
+.vien:hover .vien-bg{ display: inline-block}
+
+.icon{
+	width: 80%; height: 30px; position:absolute; top:-15%; left:10%; display: flex; justify-content: space-around; transition: all 1s; z-index: 10
+}
+.icon a{color: darkred; height:30px; width:30px; border: 1px solid darkred; border-radius: 15px; display:flex; align-items:center; justify-content: center; text-decoration: none }
+
+.icon a:hover { background-color: darkred; color: white }
+
+/*phần feature*/
+
+#Feature{ margin-top: 30px; padding: 0; width:100%; min-height: 500px; background: url("../images/bg2.png"); background-size:cover; background-position: bottom; }
+.vien-trang{width: 100%; min-height:70px; border: 1px solid white; text-align: center; padding: 20px 40px; background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px)}
+.vien-trang h3{ color:darkred; margin-bottom:30px}
+.font-a{color: darkred}
+.vien-trang a{ text-decoration: none; margin-left: 5px; color: darkred; cursor: pointer }
+.vien-trang a:hover { text-decoration: underline }
+
+/* Phần Blog*/
+.text-blog { width: 100%; min-height: 300px;display: flex; flex-direction: column; align-items: center; justify-content: center;  }
+
+.text-blog button{padding :10px 20px;border-radius:10px; color:darkred; border: 1px solid darkred; font-size: 14px }
+.text-blog button:hover{ background-color: darkred; color: white}
+
+#contact{ margin-top: 30px; padding: 0; width:100%; min-height: 600px; background: url("../images/Banner2.png"); background-size:cover; background-position: bottom; }
+
+.form-bg input ,.form-bg textarea{ width: 100%; padding: 10px; margin-bottom: 10px; border-radius:5px; border: none; font-size:14px; box-shadow: 1px 2px 3px lightgrey }
+.form-bg{background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px); padding : 20px; border-radius: 20px; width: 100%; min-height: 300px }
+.subbut {background-color:#F27414; color: white; border-radius:5px; border: none; font-size:14px }
+.subbut:hover {background-color:#C34B01; color: white }
+.form-cont{ width: 100%; min-height: 400px; background: url("../images/10388838.png") ; background-size:cover; background-position: top center; padding: 50px; display: flex; justify-content: center;  }
+.input-row {
+  display: flex; /* Arrange email and phone horizontally */
+ /* Space between email and phone */
+}
+
+.input-icon {
+  position: relative;
+  flex: 1; /* Allow inputs to grow */
+	margin: 10px
+}
+
+.input-icon input {
+  width: 100%;
+  padding-left: 30px;
+padding-bottom: 10px;
+	padding-top:10px;
+  box-sizing: border-box;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: #999;
+}
+.icon-separator{position: absolute;
+  top: 50%;
+  left: 26px;
+  transform: translateY(-50%);
+  height: 1.2em; /* Adjust height as needed */
+  border-left: 1px solid #9F9F9F;}
+
+.input-icon textarea {
+	 width: 100%;
+  padding-left: 30px;
+padding-bottom: 10px;
+	padding-top:10px;
+  box-sizing: border-box;
+	height: 250px
+}
+.input-icon .icon-ta{
+	 position: absolute;
+  top: 20px;
+  left: 8px;
+  color: #999;
+}
+.icon-separator-ta{position: absolute;
+	top: 12px;
+  left: 26px;
+  height: 1.2em; /* Adjust height as needed */
+  border-left: 1px solid #9F9F9F;}
+
+.lh-p{width: 100%; min-heiht: 200px; color:#727272 ; margin-top: 30px; padding-bottom:0px}
+
+/* Phần footer*/
+
+footer { width: 100%; min-height: 400px; background-color: #9E4F2E; margin:0; padding:0}
+.mp-0{margin:0; padding:0}
+.fot-lg{width: 100px}
+.fot-1{margin-top: 30px; padding: 0}
+.fot-p{margin-top: 50px;color: #E1D5D1; padding-right: 50px}
+.fot-p a{ color: #E1D5D1; font-size: 25px; padding-left:10px  }
+.fot-p a:hover{color:#461601}
+.fot-p p{ display: inline-flex; /* Use inline-flex to keep it inline with other elements */
+  align-items: center;}
+.fot-2{ margin-top: 30px; color: #E1D5D1; display:flex; flex-direction: column}
+.fot-list{margin-top: 50px; display:flex; flex-direction: column;  }
+.fot-list a{padding-bottom:20px; font-size:14px; color: #E1D5D1; text-decoration: none }
+.fot-list a:hover{ color:#461601; text-decoration: underline 1px darkred}
+.bg-fot{background: url("../images/blog1 (2).png")}
