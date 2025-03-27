@@ -27,7 +27,7 @@ font-size:16px;
   color: #7C7C7C; 
   display: block;}
 .menu a:hover{
-	text-decoration: underline 3px darkred ;
+	text-decoration:underline 3px darkred ;
 	color: #414141
 }
 .menu a.gachduoi{
